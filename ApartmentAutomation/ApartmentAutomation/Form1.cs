@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace ApartmentAutomation
 {
-    public partial class Form1 : Form
+    public partial class Form1 : System.Windows.Forms.Form
     {
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btn_Incomes_Click(object sender, EventArgs e)
+        {
+            new Incomes().Show();
+        }
+
+        private void btn_Expences_Click(object sender, EventArgs e)
+        {
+            new Expenses().Show();
         }
     }
 }
